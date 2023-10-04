@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+:root {
+    --header-color: #089de3;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 1.6rem;
+}
+
+a {
+    /* color: #1C9C94; */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #089de3;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+article {
+    padding: 0 1rem;
+}
+
+section {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+header {
+    display: -webkit-box;
+    padding: 2rem;
+    text-align: center;
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header .header-content {
+    margin: 0 0;
+    max-width: 50%;
+    text-align: start;
+    width: 50%;
+    height: auto;
+}
+
+header img {
+    border-radius: 60%;
+    max-width: 150px;
+}
+
+header a:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+@supports (font-variation-settings: "wght" 700) {
+    .overlay h1 {
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+    }
+}
+
+.overlay {
+    display: -webkit-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black background with opacity */
+    border-radius: 30px;
+    padding: 1.5rem 1.5rem;
+}
+
+.name-box {
+    width: 50%;
+    height: auto;
+    align-items: end;
+    justify-content: end;
+    margin-top: 5.5%;
+}
+
+.headericon {
+    font-size: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: 10px;
+}
+
+a .headericon {
+    color: white;
+}
+
+
+.navMenu {
+    text-align: center;
+    padding: 15px 10%;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navMenu a {
+    color: #ffffff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 1.5em;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+    color: #089de3;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h3,
+h4 {
+    font-weight: bold;
+}
+
+main {
+    max-width: 1140px;
+}
+
+main section {
+    scroll-margin-top: 2.6em;
+}
+
+main section:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.workexp-container {
+    background-color: white;
+    border-radius: 5px;
+    border-color: black;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.workplace-container {
+    align-items: baseline;
+    display: -webkit-box;
+}
+
+
+.workplace-container img {
+    display: inline;
+    min-width: 25px;
+    max-width: 50px;
+    /*actual image width*/
+    height: auto;
+    /* maintain aspect ratio*/
+    margin: auto;
+    /*optional centering of image*/
+}
+
+.workexp-container .workplace-company-name {
+    min-width: 75%;
+    margin-left: 0.75rem;
+    font-size: 18px;
+}
+
+.workexp-container .workplace-work-duration {
+    color: #6b6b6b;
+    font-size: 14px;
+    max-width: 25%;
+
+}
+
+.workplace-description {
+    margin-top: 10px;
+    margin-left: 1rem;
+}
+
+.workplace-description .workplace-title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.workplace-description ul {
+    list-style-position: inside;
+    padding-left: 14px;
+    color: #4d4d4d;
+    font-size: 16px;
+}
+
+
+.school {
+    align-items: baseline;
+    column-gap: 0.2rem;
+    margin-top: 1rem;
+}
+
+
+.school .sch-years {    
+    min-width: 15%;
+    max-width: 15%;
+    color: #6b6b6b;
+    font-size: 14px;
+}
+
+.school-container {
+    max-width: 85%;
+    margin-left: 0.5rem;
+}
+
+.school-container .sch-name {
+    max-width: 85%;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.school-container .sch-course {
+    color: #000000;
+    font-size: 16px;
+}
+
+
+
+
+.skills {    
+    display:-webkit-box;
+}
+
+.skills .column {
+    display: -webkit-box;
+    max-width: 50%;
+}
+
+
+.skills table {
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+.gold {
+    color:gold;
+}
+
+
+footer {
+    padding: 1em 1.5em;
+    background: #089de3;
+    color: white;
+    text-align: right;
+}
+
+footer a {
+    color: #abe2fd;
+}
+
+footer a:hover {
+    color: #000000;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .skills {
+        display: block;
+    }
+
+    .skills .column {
+        max-width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}

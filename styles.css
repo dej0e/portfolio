@@ -77,11 +77,21 @@ header a:hover {
     transition: all 0.2s ease-in-out;
 }
 
+.overlay {
+    display: -webkit-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black background with opacity */
+    border-radius: 30px;
+    padding: 1.5rem 1.5rem;
+}
+
+
 .overlay h1 {
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     letter-spacing: 0.1em;
 }
+
 
 @supports (font-variation-settings: "wght" 700) {
     .overlay h1 {
@@ -89,14 +99,6 @@ header a:hover {
         font-weight: 700;
         letter-spacing: 0.1em;
     }
-}
-
-.overlay {
-    display: -webkit-box;
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Black background with opacity */
-    border-radius: 30px;
-    padding: 1.5rem 1.5rem;
 }
 
 .name-box {
@@ -186,7 +188,6 @@ main section:not(:last-child) {
     display: -webkit-box;
 }
 
-
 .workplace-container img {
     display: inline;
     min-width: 25px;
@@ -208,7 +209,6 @@ main section:not(:last-child) {
     color: #6b6b6b;
     font-size: 14px;
     max-width: 25%;
-
 }
 
 .workplace-description {
@@ -229,13 +229,10 @@ main section:not(:last-child) {
     font-size: 16px;
 }
 
-
 .school {
     align-items: baseline;
-    column-gap: 0.2rem;
     margin-top: 1rem;
 }
-
 
 .school .sch-years {    
     min-width: 15%;
@@ -261,9 +258,6 @@ main section:not(:last-child) {
     font-size: 16px;
 }
 
-
-
-
 .skills {    
     display:-webkit-box;
 }
@@ -273,10 +267,23 @@ main section:not(:last-child) {
     max-width: 50%;
 }
 
-
 .skills table {
     border-collapse: separate;
     border-spacing: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+    .skills {
+        display: block;
+    }
+
+    .skills .column {
+        max-width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
 
 .gold {
@@ -297,19 +304,4 @@ footer a {
 
 footer a:hover {
     color: #000000;
-}
-
-
-@media only screen and (max-width: 576px) {
-    .skills {
-        display: block;
-    }
-
-    .skills .column {
-        max-width: 100%;
-    }
-
-    footer {
-        text-align: center;
-    }
 }

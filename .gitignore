@@ -5,6 +5,7 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
+*.code-workspace
 
 # Local History for Visual Studio Code
 .history/
@@ -16,4 +17,3 @@
 # Ignore all local history of files
 .history
 .ionide
-IS601-assignment-01.code-workspace

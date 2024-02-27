@@ -49,7 +49,7 @@ main {
 }
 
 header {
-    padding: 2rem;
+    padding: 21.2%;
     text-align: center;
     background-image: url('./img/background.jpg');
     background-size: cover;
@@ -66,8 +66,20 @@ header .header-content {
     height: auto;
 }
 
+.image-cropper {
+    max-width: 256px;
+    height: auto;
+}
 header img {
-    border-radius: 60%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
 }
 
 header a:hover {
@@ -82,6 +94,7 @@ header a:hover {
     /* Black background with opacity */
     border-radius: 30px;
     padding: 1.5rem 1.5rem;
+    position: relative;
 }
 
 
@@ -101,11 +114,8 @@ header a:hover {
 }
 
 .name-box {
-    width: 50%;
-    height: auto;
-    align-items: end;
-    justify-content: end;
-    margin-top: 5.5%;
+    margin-left: 10%;
+    width: 25%;
 }
 
 .headericon {

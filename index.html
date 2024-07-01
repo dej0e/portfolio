@@ -1,272 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Simple CV created with HTML and CSS">
-  <meta name="author" content="dej0e">
-  <title>dejoe.dev - Portfolio</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-  <link rel="manifest" href="./favicon/site.webmanifest">
-  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <script src="https://kit.fontawesome.com/f8c0f8bd2c.js" crossorigin="anonymous"></script>
-</head>
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>dejoe.dev</title>
 
-<body>
-  <header id="header-intro">
-    <div class="overlay">
-      <div class="name-box ">
-        <div class="image-cropper">
-          <img src="./img/FullSizeRender.JPEG">
-        </div>
-      </div>
-      <section class="header-content">
-        <h1>Dejoe John</h1>
-        <h2>Hello! 👋</h2>
-        <p> I am a dev, and student at NJIT.<br>
-          I have passion to build mobile applications and
-          backend services. <br>Focused, dedicated, hard-working and willing to learn in a changing and
-          challenging environment.</p>
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="dej0e, dejoe john, dejoe varghese john, android, mobile, ios, dev, skill" />
 
-        <!-- target `_blank` in <a> tag is used to open links in a new tab always -->
-        <a href="https://www.facebook.com/dej0e" target="_blank">
-          <i class="headericon fa-brands fa-facebook fa-2xl"></i>
-        </a>
-        <a href="https://www.twitter.com/dej0e" target="_blank">
-          <i class="headericon fa-brands fa-twitter fa-2xl"></i>
-        </a>
-        <a href="https://github.com/dej0e" target="_blank">
-          <i class="headericon fa-brands fa-github fa-2xl"></i>
-        </a>
-        <a href="https://www.instagram.com/dej0e" target="_blank">
-          <i class="headericon fa-brands fa-instagram fa-2xl"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/dejoe" target="_blank">
-          <i class="headericon fa-brands fa-linkedin fa-2xl"></i>
-        </a>
-        <a href="mailto:me@dejoe.dev" target="_blank">
-          <i class="headericon fa-solid fa-envelope fa-2xl"></i>
-        </a>
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Dejoe John | Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, I am <span class="text-color-main name">Dejoe John</span>
+          <br />
+          mobile and backend dev expert!
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
       </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
     </div>
-  </header>
-  <nav class="navMenu">
-    <a href="#header-intro">Home</a>
-    <a href="#work">Work</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-  </nav>
-  <main>
-    <section id="work">
-      <h3>Work Experience</h3>
-      <article class="workexp-container">
-        <div class='workplace-container'>
-          <span><img src="img/infrrd.jpeg"></span>
-          <p class="workplace-company-name">Infrrd Inc.</p>
-          <p class="workplace-work-duration">Bengaluru, India | 2016 - 2023</p>
-        </div>
-        <div class='workplace-description'>
-          <span class='workplace-desc-item workplace-title'>Technical Specialist</span>
-          <ul>
-            <li>Transformed a legacy tech stack system to a high-performance, low latency, scalable SaaS system capable
-              of
-              handling 100 million requests, using 10+ microservices and 15+ AWS lambda functions.</li>
-            <li>Designed and architected real estate mobile applications for iOS and Android platforms with a ~10K user
-              base for
-              a publicly traded mortgage corporation in the US with assets of ~$700M.</li>
-            <li>Boosted data extraction accuracy from 75% to 98% by developing customized client-specific data
-              extraction
-              engines using API, Java Spring Boot and MongoDB and training machine learning (ML) models.</li>
-            <li>Accomplished on-time project delivery by showcasing technical leadership in an 8-member mobile-first
-              team for
-              Android and iOS applications and a 6-member full stack team specializing in Python and Angular.</li>
-            <li>Led cross-functional teams to achieve strategic project milestones and deliverables, bringing ~$800K in
-              revenue.
-            <li>Built deployment pipelines with Jenkins, ArgoCD, and AWS, ensuring 99% uptime and seamless operations.
-            </li>
-            <li>Chaired product and technical meetings to facilitate stakeholder and inter-team communications, leading
-              to
-              improved clarity in requirements, increased productivity, and a steady decline in the burndown chart.</li>
-          </ul>
-        </div>
-        <div class='workplace-description'>
-          <span class='workplace-desc-item workplace-title'>Senior Software Engineer</span>
-          <ul>
-            <li>Developed MVPs for mobile and web systems after conducting thorough technical feasibility of
-              requirements.</li>
-            <li>Incorporated new features based on market research and customer needs, improving app usability.</li>
-            <li>Mentored over 15 new hires in advanced programming techniques, requirement analysis, codebase
-              familiarity, best
-              practices, and processes during comprehensive onboarding.</li>
-            <li>Achieved a 70% decrease in defects and change requests by implementing static code analysis using
-              SONARQUBE, standardizing code reviews, and leading pair programming sessions.</li>
-          </ul>
-        </div>
-        <div class='workplace-description'>
-          <span class='workplace-desc-item workplace-title'>Software Engineer</span>
-          <ul>
-            <li>Reduced mobile app crashes by 80%, leading to a 75% user retention by following test driven development
-              (TDD) methodologies, writing automated test suites using JUnit, Mockito, and increasing code coverage to
-              70%.</li>
-            <li>Collaborated with a team of 5 engineers to increase user engagement by 80% by implementing new features
-              in
-              the application and refactoring existing code to improve performance.</li>
-          </ul>
-        </div>
-      </article>
-    </section>
+    <!-- /END Hero Section -->
 
-    <section id="education">
-      <h3>Education</h3>
-      <article>
-        <div class='school'>
-          <span class="sch-years">2023 - Present</span>
-          <div class="school-container">
-            <span class="school-container sch-name">New Jersey Institute of Technology,</span> <span
-              class="school-container sch-course">Master of Science in Computer Science</span>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./img/FullSizeRender.JPEG"
+              alt="Profile Image"
+              width="350"
+              height="450"
+            />
           </div>
-        </div>
-      </article>
-      <article>
-        <div class='school'>
-          <span class="sch-years">2012 - 2016</span>
-          <div class="school-container">
-            <span class="school-container sch-name">NIT Surat,</span> <span class="school-container sch-course">Bachelor
-              of Technology in Computer Science</span>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              As a Technical Specialist, I transformed a legacy system into a scalable SaaS capable of handling 100 million requests, designed mobile applications for a major mortgage corporation, and increased data extraction accuracy from 75% to 98% using Java Spring Boot, MongoDB, and ML models. Leading cross-functional teams, I ensured on-time project delivery and generated ~$800K in revenue. I built deployment pipelines with Jenkins, ArgoCD, and AWS, ensuring 99% uptime, and chaired meetings to improve communication and productivity.
+            </p>
+            <p class="about-wrapper__info-text">
+              As a Senior Software Engineer, I developed MVPs, enhanced app usability, mentored over 15 new hires, and reduced defects by 70% through static code analysis and code reviews.
+            </p>
+            <p class="about-wrapper__info-text">
+              Previously, as a Software Engineer, I reduced mobile app crashes by 80%, increasing user retention by 75%, and boosted user engagement by 80% through feature implementation and code refactoring.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="./assets/Dejoe_Resume_MSCS.pdf" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
           </div>
-        </div>
-
-      </article>
-    </section>
-
-    <section id="skills">
-      <h3>Skills</h3>
-      <div class='skills'>
-        <div class='column'>
-          <table>
-            <tr>
-              <td>Android</td>
-              <td>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>iOS</td>
-              <td>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>JAVA</td>
-              <td>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>Git</td>
-              <td>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star"></i>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class='column'>
-          <table>
-            <tr>
-              <td>MongoDB</td>
-              <td>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>SQL</td>
-              <td>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>Kotlin</td>
-              <td>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>AWS</td>
-              <td>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>GCP</td>
-              <td>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star rating gold"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </td>
-            </tr>
-          </table>
         </div>
       </div>
     </section>
+    <!-- /END About Section -->
 
-  </main>
-  <footer>
-    <p>Header Photo by <a
-        href="https://unsplash.com/@jeffgry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oğuzhan
-        Akdoğan</a> on <a
-        href="https://unsplash.com/photos/qYMkkREOHa4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash
-      </a>
-    <p>Coded in 2023<i class="fa-solid fa-heart" style="color: #ff0000; margin-left: 1rem;"></i></p>
-  </footer>
-</body>
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
 
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">ResNeXT - Pneumonia Detection using AI</h3>
+              <p class="project-wrapper__text-info">
+                Built a sophisticated AI model to detect any patterns from an X-ray that will increase the probability of an accurate pneumonia diagnosis. The model is currently being trained on a dataset of 5,000+ X-ray images to classify whether the person is affected.
+              </p>
+              <div class="project-wrapper__text-btns">
+               <a href="https://github.com/dej0e/pneumonia-detection" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://github.com/dej0e/pneumonia-detection" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/image1.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Zootopia</h3>
+              <p class="project-wrapper__text-info">
+                Built inventory management, zoo population control, and employee management systems to demonstrate advanced Database Management skills. 
+                The backend was written in Java and had an Oracle DB as a Database System. The front end was done in both React and JavaFX. 
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a href="https://github.com/dej0e/zootopia" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="https://github.com/dej0e/zootopia" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/image2.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">URRRAHHH!! Let's build something!</p>
+          <a href="mailto:dejoejohn@gmail.com" class="cta-btn cta-btn--resume">Send me an email</a>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://x.com/dej0e"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://instagram.com/dej0e"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+                    <a
+            href="https://www.linkedin.com/in/dejoe/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/dej0e/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"> - </span>Made with &hearts;
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
 </html>
